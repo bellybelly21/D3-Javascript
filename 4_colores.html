@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 colores</title>
+</head>
+<body>
+    <section class="contenedor">
+        <div style="background-color: blue;" id="div1" onclick="pintar('div1', 'black')">azul</div>
+        <div style="background-color: red;" id="div2" onclick="pintar('div2', 'black')">rojo</div>
+        <div style="background-color: green;" id="div3" onclick="pintar('div3', 'black')">verde</div>
+        <div style="background-color: yellow;" id="div4" onclick="pintar('div4', 'black')">amarillo</div>
+    </section>
+
+    <style>
+        #div1, #div2, #div3, #div4{
+        color: white; 
+        font-weight: 600;
+        font-size: 24px;
+        width: 200px; 
+        height: 200px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        }
+
+        .contenedor{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
